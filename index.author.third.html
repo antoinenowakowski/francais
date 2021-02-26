@@ -5,6 +5,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Ballade en rêve - Paul Verlaine</title>
+    <link rel="icon" href="img/icon.png" theme="dark">
+    <link rel="icon" href="img/iconwhite.png" theme="white">
 </head>
 <body>
     <style>
@@ -13,7 +15,7 @@
         }
         body {
             background: linear-gradient( 126deg,#6E6590, #8B80AB, #BDA5C9, #DBA4B1, #FA9C94, #FFA082, #FFB272);
-            height: 950px;
+            height: 2500px;
             width: 100%;
         }   
         .box  {
@@ -66,6 +68,58 @@
                 width: 950px;
             }
         }
+        .contain_under_box {
+            display: flex;
+            margin-left: 40px;
+            margin-right: 40px;
+            height: 400px;
+        }
+        .under_box {
+            width: 500px;
+            height: 500px;
+        }
+        .under_box:nth-child(1) {
+            background-color: white;
+            color: black;
+            width: 400px;
+            height: 400px;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+        .text_in_under_box {
+            margin-left: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.4em; 
+        }
+        .image {
+            width: 250px;
+            height: 350px;
+        }
+        .box_two  {
+            box-shadow: 8.4px 6.3px 36px;
+            border: 3px solid black;
+            border-radius: 10rem;
+            background-color: #A1BAE0;
+            height: 1200px;
+            width: 75%;
+            margin-top: 100px;
+        }
+        .title_on_the_box_two {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.2em;
+            padding-left: 100px;
+            padding-top: 4px;
+            color: #394B8D;
+            text-decoration: underline;
+        }
+        .title_between_box_one_and_two {
+            color: #394B8D;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.6em; 
+            margin-left: 120px;
+            margin-top: 10px;
+            text-decoration: underline;
+        }
     </style>
     <div class="box">
         <h1 class="title">
@@ -86,7 +140,55 @@
             </p>
             <img src="img_poete/paul-verlaine.jpg" width="320" height="433">
         </span>
-        <div id="div"><a href="index.html" title="retour sur l'autre page" class="link">Retour sur la première page.</a></div>
     </div>
+    <div class="box_two">
+        <h1 class="title_on_the_box_two">
+            Poème:
+        </h1>
+        <div class="contain_under_box">
+            <span class="under_box">
+                <p class="text_in_under_box">
+                    Javardh.<br>
+                    <br>
+                    <br>
+                    &nbsp;September 14, 2018<br>
+                    <br>
+                    &nbsp;Distance focale. 85,0mm<br>
+                    <br>
+                    &nbsp;Ouverture. ƒ/1.4<br>
+                    <br>
+                    &nbsp;(125 X 100 cm)<br>
+                    &nbsp;<a href="https://unsplash.com/photos/2q6C5zDJOsg" title="source" target="_blank"></a>
+                </p>
+            </span>
+            <span class="under_box">
+                <img src="img_illu/dream.jpg" class="image">
+            </span>
+        </div>
+        <div style="border-top: 1.7px solid black; margin-top: 50px; width: 95%;"></div>
+        <h1 class="title_on_the_box_two">
+            Chanson:
+        </h1>
+        <div class="contain_under_box" style="height: 200px; margin-top: 30px;">
+            <span class="under_box">
+                <p class="text_in_under_box">
+                    Jean-Philippe Delberghe.<br>
+                    <br>
+                    <br>
+                    &nbsp;July 30, 2017<br> 
+                    <br>
+                    &nbsp;Distance focale. 30.0mm<br>
+                    <br>
+                    &nbsp;(5184 × 3456)<br>
+                    <br>
+                    &nbsp;<a href="https://unsplash.com/photos/vlQnJZ5rOwY" target="_blank" title="image trouvée sur Internet">Source</a>
+                </p>
+            </span>
+            <span class="under_box">
+                <img src="img_illu/jean-philippe-delberghe.jpg" width="300" height="200">
+            </span>
+        </div>
+    </div>
+    <div id="div"><a href="index.html" title="retour sur l'autre page" class="link">Retour sur la première page.</a></div>
 </body>
 </html>
